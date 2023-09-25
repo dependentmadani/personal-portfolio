@@ -11,8 +11,8 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Ping-Pong Webiste Game",
+      description: "Development & Deployment",
       imgUrl: projImg1,
     },
     {
@@ -21,7 +21,7 @@ export const Projects = () => {
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "Business something",
       description: "Design & Development",
       imgUrl: projImg3,
     },
@@ -69,6 +69,7 @@ export const Projects = () => {
                       <Row>
                         {
                           projects.map((project, index) => {
+                            if (index > 2) return;
                             return (
                               <ProjectCard
                                 key={index}
@@ -79,11 +80,39 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                          {
+                            projects.map((project, index) => {
+                              if (index < 3 || index > 5){
+                                return;
+                              }
+                                return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            })
+                          }
+                      </Row>                    
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Row>
+                            {
+                              projects.map((project, index) => {
+                                if (index < 6 || index > 8){
+                                  return;
+                                }
+                                  return (
+                                  <ProjectCard
+                                    key={index}
+                                    {...project}
+                                    />
+                                )
+                              })
+                            }
+                      </Row> 
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
