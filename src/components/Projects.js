@@ -85,7 +85,7 @@ export const Projects = () => {
                       <Row>
                         {
                           projects.map((project, index) => {
-                            if (index > 2) return;
+                            if (index > 2) return (<></>);
                             return (
                               <ProjectCard
                                 key={index}
@@ -101,7 +101,7 @@ export const Projects = () => {
                           {
                             projects.map((project, index) => {
                               if (index < 3 || index > 5){
-                                return ;
+                                return (<></>);
                               }
                               return (
                                 <ProjectCard
@@ -118,7 +118,7 @@ export const Projects = () => {
                             {
                               projects.map((project, index) => {
                                 if (index < 6 || index > 8){
-                                  return;
+                                  return (<></>);
                                 }
                                   return (
                                   <ProjectCard
@@ -137,7 +137,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt=""></img>
     </section>
   )
 }
