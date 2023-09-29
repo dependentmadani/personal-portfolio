@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img width="1266" alt="Screenshot from 2023-09-28 18-25-00" src="./public/Screenshot from 2023-09-28 18-25-00.png">
+<img width="1266" alt="Screenshot from 2023-09-28 18-25-00" src="./client/public/Screenshot from 2023-09-28 18-25-00.png">
 
 Built using:
 
