@@ -26,6 +26,10 @@ contactEmail.verify((error) => {
   }
 });
 
+router.get("/", (req,res) => {
+  res.send("all seem to be good")
+})
+
 router.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
