@@ -27,10 +27,10 @@ export const Projects = () => {
       link: "https://github.com/dependentmadani/chat-app",
     },
     {
-      title: "Business something",
+      title: "TO-DO application",
       description: "Design & Development",
       imgUrl: projImg3,
-      link: "",
+      link: "https://github.com/dependentmadani/TO-DO-App",
     },
     {
       title: "Web Server",
