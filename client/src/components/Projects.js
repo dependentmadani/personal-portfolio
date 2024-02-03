@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/ping-pong-website.png";
-import projImg2 from "../assets/img/chat-app.png";
+import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
@@ -15,16 +15,16 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Ping-Pong Webiste Game",
+      title: "Ping-Pong Game Website",
       description: "Development & Deployment",
       imgUrl: projImg1,
       link: "https://github.com/dependentmadani/ft_transcendence",
     },
     {
-      title: "Chat Application",
+      title: "Wordle Game",
       description: "Design & Development",
       imgUrl: projImg2,
-      link: "https://github.com/dependentmadani/chat-app",
+      link: "https://github.com/dependentmadani/wordle-game",
     },
     {
       title: "TO-DO application",
